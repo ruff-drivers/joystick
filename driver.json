@@ -1,0 +1,34 @@
+{
+    "models": [
+        "joystick-9p"
+    ],
+    "power": {
+        "name": "vcc",
+        "voltage": "5v"
+    },
+    "args": {
+        "interval": {
+            "type": "number",
+            "default": 50
+        },
+        "accuracy": {
+            "type": "number",
+            "default": 0.1
+        }
+    },
+    "inputs": {
+        "key": {
+            "type" : "gpio",
+            "args" : {
+                "direction": "in",
+                "edge": "both"
+            }
+        },
+        "x": {
+            "type": "adc"
+        },
+        "y": {
+            "type": "adc"
+        }
+    }
+}

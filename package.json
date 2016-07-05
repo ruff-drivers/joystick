@@ -1,0 +1,41 @@
+{
+    "name": "joystick",
+    "version": "0.1.0",
+    "description": "PS2 Joystick Driver for Ruff.",
+    "author": "Nanchao Inc.",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ruff-drivers/joystick.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ruff-drivers/joystick/issues"
+    },
+    "homepage": "https://github.com/ruff-drivers/joystick",
+    "keywords": [
+        "ruff",
+        "driver"
+    ],
+    "main": "src/index.js",
+    "device-typings": "typings/device.d.ts",
+    "engines": {
+        "ruff": "~1.2.0"
+    },
+    "scripts": {
+        "install-sdk": "rvm install --local",
+        "install-rap-dependencies": "rap install",
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "exit 0"
+    },
+    "devDependencies": {
+        "eslint": "^2.13.1",
+        "ruff-standard": "^0.1.6",
+        "rvm": "^0.3.2"
+    },
+    "ruff": {
+        "devDependencies": {
+            "t": "^0.1.7"
+        }
+    }
+}
