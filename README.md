@@ -43,12 +43,16 @@ The accuracy of x/y axis value, defaults to `0.1`. It should be a number that `>
 Here is the basic usage of this driver.
 
 ```js
+'use strict';
+
+var joystick = $('#<device-id>');
+
 joystick.on('push', function () {
     console.log('push');
 });
 
 joystick.on('release', function () {
-    console.log('push');
+    console.log('release');
 });
 
 joystick.on('x', function (x) {
